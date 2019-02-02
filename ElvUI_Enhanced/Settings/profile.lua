@@ -65,9 +65,8 @@ P.enhanced = {
 		}
 	},
 	equipment = {
-		enable = false,
 		durability = {
-			enable = true,
+			enable = false,
 			onlydamaged = true,
 			position = "TOPLEFT",
 			xOffset = 1,
@@ -77,7 +76,7 @@ P.enhanced = {
 			fontOutline = "MONOCHROMEOUTLINE"
 		},
 		itemlevel = {
-			enable = true,
+			enable = false,
 			qualityColor = true,
 			position = "BOTTOMRIGHT",
 			xOffset = 1,
@@ -85,7 +84,7 @@ P.enhanced = {
 			font = "Homespun",
 			fontSize = 10,
 			fontOutline = "MONOCHROMEOUTLINE"
-		}
+		},
 	},
 	minimap = {
 		location = false,
@@ -102,7 +101,7 @@ P.enhanced = {
 	},
 	tooltip = {
 		itemQualityBorderColor = false,
-		progressInfo  = true,
+		progressInfo  = false,
 		tooltipIcon = {
 			enable = false,
 			tooltipIconSpells  = true,
