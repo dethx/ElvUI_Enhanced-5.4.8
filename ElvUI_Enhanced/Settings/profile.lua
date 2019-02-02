@@ -65,9 +65,8 @@ P.enhanced = {
 		}
 	},
 	equipment = {
-		enable = false,
 		durability = {
-			enable = true,
+			enable = false,
 			onlydamaged = true,
 			position = "TOPLEFT",
 			xOffset = 1,
@@ -77,7 +76,7 @@ P.enhanced = {
 			fontOutline = "MONOCHROMEOUTLINE"
 		},
 		itemlevel = {
-			enable = true,
+			enable = false,
 			qualityColor = true,
 			position = "BOTTOMRIGHT",
 			xOffset = 1,
@@ -87,7 +86,7 @@ P.enhanced = {
 			fontOutline = "MONOCHROMEOUTLINE"
 		},
 		equipmentSet = {
-			enable = true,
+			enable = false,
 			position = "CENTER",
 			xOffset = 2,
 			yOffset = 1,
@@ -111,7 +110,7 @@ P.enhanced = {
 	},
 	tooltip = {
 		itemQualityBorderColor = false,
-		progressInfo  = true,
+		progressInfo  = false,
 		tooltipIcon = {
 			enable = false,
 			tooltipIconSpells  = true,
