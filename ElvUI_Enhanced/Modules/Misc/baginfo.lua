@@ -83,6 +83,7 @@ function BI:UpdateContainerFrame(frame, bag, slot)
 	end
 	
 	frame.equipmentinfo:ClearAllPoints()
+	frame.equipmentinfo:SetWidth(frame:GetWidth())
 	frame.equipmentinfo:SetPoint(db.position, frame, db.xOffset, db.yOffset)
 	frame.equipmentinfo:FontTemplate(E.LSM:Fetch("font", db.font), db.fontSize, db.fontOutline)
 	frame.equipmentinfo:SetWordWrap(true)
@@ -119,7 +120,7 @@ function BI:ToggleSettings()
 		self:CancelTimer(updateTimer)
 	end
 
-	if E.db.enhanced.equipment.enable and E.db.enhanced.equipment.equipmentSet.enable then
+	if E.db.enhanced.equipment.equipmentSet.enable then
 		self:RegisterEvent("EQUIPMENT_SETS_CHANGED", "DelayUpdateBagInformation")
 		self:RegisterEvent("BAG_UPDATE", "DelayUpdateBagInformation")
 		self:RegisterEvent("PLAYERBANKSLOTS_CHANGED", "DelayUpdateBagInformation")

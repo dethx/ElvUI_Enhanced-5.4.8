@@ -1297,7 +1297,6 @@ local function MiscOptions()
 								type = "toggle",
 								name = L["Enable"],
 								desc = L["Show the associated equipment sets for the items in your bags (or bank)."],
-								disabled = function() return not E.db.enhanced.equipment.enable end
 							},
 							spacer = {
 								order = 4,
@@ -1313,21 +1312,21 @@ local function MiscOptions()
 									["CENTER"] = "CENTER",
 									["BOTTOM"] = "BOTTOM"
 								},
-								disabled = function() return not E.db.enhanced.equipment.equipmentSet.enable or not E.db.enhanced.equipment.enable end
+								disabled = function() return not E.db.enhanced.equipment.equipmentSet.enable end
 							},
 							xOffset = {
 								order = 7,
 								type = "range",
 								name = L["X-Offset"],
 								min = -50, max = 50, step = 1,
-								disabled = function() return not E.db.enhanced.equipment.equipmentSet.enable or not E.db.enhanced.equipment.enable end
+								disabled = function() return not E.db.enhanced.equipment.equipmentSet.enable end
 							},
 							yOffset = {
 								order = 8,
 								type = "range",
 								name = L["Y-Offset"],
 								min = -50, max = 50, step = 1,
-								disabled = function() return not E.db.enhanced.equipment.equipmentSet.enable or not E.db.enhanced.equipment.enable end
+								disabled = function() return not E.db.enhanced.equipment.equipmentSet.enable end
 							},
 							font = {
 								order = 9,
@@ -1335,14 +1334,14 @@ local function MiscOptions()
 								dialogControl = "LSM30_Font",
 								name = L["Font"],
 								values = AceGUIWidgetLSMlists.font,
-								disabled = function() return not E.db.enhanced.equipment.equipmentSet.enable or not E.db.enhanced.equipment.enable end
+								disabled = function() return not E.db.enhanced.equipment.equipmentSet.enable end
 							},
 							fontSize = {
 								order = 10,
 								type = "range",
 								name = L["Font Size"],
 								min = 6, max = 36, step = 1,
-								disabled = function() return not E.db.enhanced.equipment.equipmentSet.enable or not E.db.enhanced.equipment.enable end
+								disabled = function() return not E.db.enhanced.equipment.equipmentSet.enable end
 							},
 							fontOutline = {
 								order = 11,
@@ -1354,7 +1353,7 @@ local function MiscOptions()
 									["MONOCHROMEOUTLINE"] = "MONOCROMEOUTLINE",
 									["THICKOUTLINE"] = "THICKOUTLINE"
 								},
-								disabled = function() return not E.db.enhanced.equipment.equipmentSet.enable or not E.db.enhanced.equipment.enable end
+								disabled = function() return not E.db.enhanced.equipment.equipmentSet.enable end
 							}
 						}
 					}
