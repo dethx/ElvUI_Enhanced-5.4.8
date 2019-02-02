@@ -270,8 +270,6 @@ function AK:SetHooks()
 		if not self:IsHooked("GuildBankFrame_Update") then
 			self:SecureHook("GuildBankFrame_Update", GuildBankFrame_Update)
 		end
-	end
-end
 
 		self.guildBankHooked = true
 	end
